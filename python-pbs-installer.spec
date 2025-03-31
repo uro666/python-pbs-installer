@@ -9,9 +9,10 @@ Summary:	Installer for Python Build Standalone
 URL:		https://pypi.org/project/pbs-installer/
 License:	MIT
 Group:		Development/Python
-BuildRequires:	python
 BuildSystem:	python
 BuildArch:	noarch
+BuildRequires:	python
+BuildRequires:	python%{pyver}dist(pdm-backend)
 
 %description
 Installer for Python Build Standalone
